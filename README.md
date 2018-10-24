@@ -28,6 +28,10 @@ There are different ways by which we can creat a energy efficient and reliable m
    2. send.Broadcast(msg)- Broadcast to all the available nodes in mesh
  - mesh.init() method is used to initialise the mesh which takes ssid of mesh, pass of mesh, callback to scheduler, WiFI MODE(AP_STA), channel id
  
+ ## How the server works?
+ 
+  On the server side
+ 
  ## Usage
    
    # Coming Soon
