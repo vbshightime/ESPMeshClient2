@@ -8,8 +8,8 @@
 # include "painlessMesh.h"
 # include "DHT.h"
 
-#define MESH_SSID "ESPMesh"
-#define MESH_PASS "24041990"
+#define MESH_SSID "Your Mesh SSID"
+#define MESH_PASS "Your Mesh Pass"
 #define MESH_PORT 5555
 #define DHTPIN 0
 #define DHTTYPE DHT11
@@ -75,18 +75,7 @@ myLoggingTask.enable();
 }
 
 
-void loop() {
-/*if(millis()-DHTTimer <= DHTInterval){
-    DHTTimer =millis();
-    temperature= dht.readTemperature();
-    humidity= dht.readHumidity();
-    if (isnan(temperature)&&isnan(humidity)) {
-      temperature=31.00;
-      humidity=85.00;
-      return;
-    }
-  }*/
-  
+void loop() {  
 userScheduler.execute();
 mesh.update();
 }
