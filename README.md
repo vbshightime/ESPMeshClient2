@@ -6,9 +6,9 @@ Mesh networks dynamically self-organize and self-configurable. Mesh networks can
 ## Introduction
 We have created a Mesh network or a star network. Our architecture consists of two cients and one server. Clients or nodes continuously braodcast
 the temperature and humidity values to the different nodes in the network. Values relayed by clients are fetched by server. The server parse
-these values and post it to cloud. We are making use of [painlessMesh]() library. This library provide us easy and user friendly ways to create a mesh network.
-There are different ways by which we can creat a energy efficient and reliable mesh nework. This library uses different other libraries like [TaskScheduler](),
-[Arduino Json](), [AsyncWebServer]() and [AsyncESP]() to serve this operation.
+these values and post it to cloud. We are making use of [painlessMesh](https://gitlab.com/BlackEdder/painlessMesh) library. This library provide us easy and user friendly ways to create a mesh network.
+There are different ways by which we can creat a energy efficient and reliable mesh nework. This library uses different other libraries like [TaskScheduler](https://github.com/arkhipenko/TaskScheduler),
+[Arduino Json](https://github.com/bblanchon/ArduinoJson) and [AsyncESPTCP](https://github.com/me-no-dev/ESPAsyncTCP) to serve this operation.
 
 ## Hardware Specification 
   
@@ -30,7 +30,7 @@ There are different ways by which we can creat a energy efficient and reliable m
  
  ## How the server works?
  
-  On the server side
+  On the server side, We are just parsing the temperature and humidity values that we got from different nodes and these values arethen sent to cloud. We are using NodeREd mqtt broker tofetch those values. More on Server can be found here [ESPMeshServer](https://github.com/vbshightime/ESPMeshServer)
  
  ## Usage
    
